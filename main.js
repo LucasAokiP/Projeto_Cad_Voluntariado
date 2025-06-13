@@ -49,5 +49,16 @@ async function pesquisarCep() {
 
 // Cadastra uma nova necessidade, valida os campos e salva no localStorage
 function cadastrar(){
+    const nome = document.getElementById("nome").value;
+    const tipo = document.getElementById("tipo").value;
+    const titulo = document.getElementById("titulo").value;
+    const descricao = document.getElementById("descricao").value;
+    const contato = document.getElementById("contato").value;
+    const cep = document.getElementById("cep").value;
+    const rua = document.getElementById("rua").value;
+    const bairro = document.getElementById("bairro").value;
+    const cidade = document.getElementById("cidade").value;
+    const estado = document.getElementById("estado").value;
+
     
 }
