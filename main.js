@@ -137,3 +137,8 @@ function excluirAjuda(index) {
         carregarTabela(); // Recarrega a tabela com os dados atualizados
     }
 }
+
+// Se estiver na página de histórico, carrega a tabela automaticamente ao abrir a página
+if (window.location.pathname.includes("historico_de_cadastro.html")) {
+    window.onload = carregarTabela;
+}
