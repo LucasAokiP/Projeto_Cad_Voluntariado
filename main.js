@@ -100,7 +100,30 @@ function cadastrar(){
     limpar();
 }
 
-//Carrega e exibe os dados salvos na tabela da página de histórico
-function carregarTabela(){
-    
+// Carrega e exibe os dados salvos na tabela da página de histórico
+function carregarTabela() {
+    const tabela = document.querySelector("table tbody");
+    let lista = JSON.parse(localStorage.getItem("ajudas")) || [];
+
+    tabela.innerHTML = "";
+
+    // Para cada necessidade salva, cria uma linha na tabela
+    lista.forEach((ajuda, index) => {
+        const linha = document.createElement("tr");
+        linha.innerHTML = `
+            <td>${index + 1}</td>
+            <td>${ajuda.nome}</td>
+            <td>${ajuda.tipo}</td>
+            <td>${ajuda.titulo}</td>
+            <td class="descricao-box">${ajuda.descricao}</td>
+            <td>${ajuda.contato}</td>
+            <td>${ajuda.cep}</td>
+            <td>${ajuda.rua}</td>
+            <td>${ajuda.bairro}</td>
+            <td>${ajuda.cidade}</td>
+            <td>${ajuda.estado}</td>
+            <td><button onclick="excluirAjuda(${index})">Excluir</button></td>
+        `;
+        tabela.appendChild(linha);
+    });
 }
