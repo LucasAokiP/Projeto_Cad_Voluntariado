@@ -60,5 +60,9 @@ function cadastrar(){
     const cidade = document.getElementById("cidade").value;
     const estado = document.getElementById("estado").value;
 
-    
+    // Verifica se todos os campos obrigatórios foram preenchidos
+    if (!nome || !tipo || !titulo || !descricao || !contato || !cep || !rua || !bairro || !cidade || !estado) {
+        alert("Por favor, preencha todos os campos.");
+        return;
+    }
 }
