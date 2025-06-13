@@ -48,3 +48,13 @@ main, .main-content{
     background-color: #34495e;
     border-radius: 4px;
 }
+
+/* Blocos de introdução, sobre e funcionalidades centralizdos e destacados*/
+.intro, .sobre, .funcionalidades {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
