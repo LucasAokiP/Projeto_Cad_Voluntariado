@@ -127,3 +127,8 @@ function carregarTabela() {
         tabela.appendChild(linha);
     });
 }
+
+// Excluir uma necessidade de histórico e atualiza a tabela
+function excluirAjuda(index){
+    
+}
