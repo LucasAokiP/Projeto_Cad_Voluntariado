@@ -128,7 +128,12 @@ function carregarTabela() {
     });
 }
 
-// Excluir uma necessidade de histórico e atualiza a tabela
-function excluirAjuda(index){
-    
+// Exclui uma necessidade do histórico e atualiza a tabela
+function excluirAjuda(index) {
+    if (confirm("Tem certeza que deseja excluir esta necessidade?")) {
+        let lista = JSON.parse(localStorage.getItem("ajudas")) || [];
+        lista.splice(index, 1); // Remove o item da lista
+        localStorage.setItem("ajudas", JSON.stringify(lista)); // Atualiza o localStorage
+        carregarTabela(); // Recarrega a tabela com os dados atualizados
+    }
 }
