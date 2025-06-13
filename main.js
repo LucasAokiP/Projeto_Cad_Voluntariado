@@ -99,3 +99,8 @@ function cadastrar(){
     alert("Necessidade cadastrada com sucesso!");
     limpar();
 }
+
+//Carrega e exibe os dados salvos na tabela da página de histórico
+function carregarTabela(){
+    
+}
