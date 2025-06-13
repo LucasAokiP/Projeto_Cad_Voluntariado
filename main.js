@@ -26,7 +26,16 @@ async function pesquisarCep() {
         alert("CEP inválido. Deve conter exatamente 8 dígitos numéricos.");
         return;
     }
-    
+
+    try {
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        const data = await response.json;
+
+        if(data.erro) {
+            alert("CEP não encontrado");
+            return;
+        }
+    }
 
 
 }
