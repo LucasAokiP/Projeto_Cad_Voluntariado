@@ -116,3 +116,30 @@ main, .main-content{
     resize: vertical;
     min-height: 80px;
 }
+
+/* Célula da descrição na tabela com rolagem e quebra de linha */
+td.descricao-box {
+    max-width: 200px;
+    max-height: 100px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Estilo dos botões */
+button {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #1f6391;
+}
