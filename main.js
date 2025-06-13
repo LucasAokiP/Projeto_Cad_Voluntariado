@@ -41,6 +41,10 @@ async function pesquisarCep() {
         document.getElementById("cidade").value = data.localidade;
         document.getElementById("estado").value = data.uf;
     }
+    catch(error){
+        console.error("Erro ao buscar o CEP:", error);
+        alert("Erro ao buscar o CEP.");
+    }
 
 
 }
