@@ -76,4 +76,18 @@ function cadastrar(){
         alert("Por favor, insira um contato válido. Pode ser um e-mail ou um número de telefone.");
         return;
     }
+
+    // Cria o objeto da necessidade
+    const ajuda = {
+        nome,
+        tipo,
+        titulo,
+        descricao,
+        contato,
+        cep,
+        rua,
+        bairro,
+        cidade,
+        estado
+    };
 }
