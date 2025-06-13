@@ -45,6 +45,9 @@ async function pesquisarCep() {
         console.error("Erro ao buscar o CEP:", error);
         alert("Erro ao buscar o CEP.");
     }
+}
 
-
+// Cadastra uma nova necessidade, valida os campos e salva no localStorage
+function cadastrar(){
+    
 }
