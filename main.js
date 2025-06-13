@@ -65,4 +65,12 @@ function cadastrar(){
         alert("Por favor, preencha todos os campos.");
         return;
     }
+
+    // Valida se o contato é um e-mail ou telefone válido
+    function validarContato(contato) {
+        const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const regexTelefone = /^\(?\d{2}\)?[\s-]?\d{4,5}-?\d{4}$/;
+        return regexEmail.test(contato) || regexTelefone.test(contato);
+    }
+    
 }
