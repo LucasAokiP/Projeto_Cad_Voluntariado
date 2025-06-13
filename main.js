@@ -10,3 +10,9 @@ const limpar = () => {
     document.getElementById("cidade").value = "";
     document.getElementById("estado").value = "";
 }
+
+// Valida se o CEP possui exatamente 8 dígitos numéricos
+function cepValido(cep) {
+    const cepStr = String(cep);
+    return cepStr.length === 8 && /^[0-9]{8}$/.test(cepStr);
+}
