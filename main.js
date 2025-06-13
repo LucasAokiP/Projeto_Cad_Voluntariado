@@ -21,4 +21,12 @@ function cepValido(cep) {
 async function pesquisarCep() {
     const cepInput = document.getElementById("cep");
     const cep = cepInput.value.replace(/\D/g, '');
+
+    if (!cepValido(cep)){
+        alert("CEP inválido. Deve conter exatamente 8 dígitos numéricos.");
+        return;
+    }
+    
+
+
 }
