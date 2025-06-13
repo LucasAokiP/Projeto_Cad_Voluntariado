@@ -35,6 +35,11 @@ async function pesquisarCep() {
             alert("CEP não encontrado");
             return;
         }
+
+        document.getElementById("rua").value = data.logradouro;
+        document.getElementById("bairro").value = data.bairro;
+        document.getElementById("cidade").value = data.localidade;
+        document.getElementById("estado").value = data.uf;
     }
 
 
