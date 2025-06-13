@@ -90,4 +90,12 @@ function cadastrar(){
         cidade,
         estado
     };
+
+    // Recupera a lista do localStorage, adiciona a nova necessidade e salva novamente
+    let lista = JSON.parse(localStorage.getItem("ajudas")) || [];
+    lista.push(ajuda);
+    localStorage.setItem("ajudas", JSON.stringify(lista));
+
+    alert("Necessidade cadastrada com sucesso!");
+    limpar();
 }
