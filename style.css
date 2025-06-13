@@ -76,3 +76,43 @@ main, .main-content{
     margin-bottom: 10px;
     font-weight: normal;
 }
+
+/* Formulário de cadastro centralizado e destacado */
+.cadastro {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do formulário de cadastro */
+.campo_de_cadastro h1 {
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+/* Rótulos dos campos do formulário */
+.campo_de_cadastro label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Campos de entrada do formulário */
+.campo_de_cadastro input,
+.campo_de_cadastro select,
+.campo_de_cadastro textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Área de texto do formulário ajustável */
+.campo_de_cadastro textarea {
+    resize: vertical;
+    min-height: 80px;
+}
