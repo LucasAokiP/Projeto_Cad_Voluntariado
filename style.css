@@ -117,15 +117,6 @@ main, .main-content{
     min-height: 80px;
 }
 
-/* Célula da descrição na tabela com rolagem e quebra de linha */
-td.descricao-box {
-    max-width: 200px;
-    max-height: 100px;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-
 /* Estilo dos botões */
 button {
     margin-top: 20px;
@@ -142,4 +133,45 @@ button {
 /* Efeito hover nos botões */
 button:hover {
     background-color: #1f6391;
+}
+
+/* Estilo da tabela principal */
+.tabela{
+    border: 1px solid #ddd;
+    width: 100%; 
+    border-collapse: collapse; 
+    text-align: left;
+}
+
+/* Linha do cabeçalho da tabela */
+.tabela tr{
+    background-color: #2980b9; 
+    color: white;
+}
+
+/* Cabeçalho da tabela */
+.tabela thead tr {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Linhas do corpo da tabela com fundo branco e espaçamento visual */
+.tabela tbody tr {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 12px solid #f5f5f5;
+}
+
+/* Célula da descrição na tabela com rolagem e quebra de linha */
+td.descricao-box {
+    max-width: 200px;
+    max-height: 100px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Espaçamento interno das células da tabela */
+.tabela td, .tabela th {
+    padding: 12px 8px;
 }
