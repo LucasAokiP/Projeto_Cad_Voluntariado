@@ -10,5 +10,5 @@ Sistema web simples para cadastro e visualização de necessidades de instituiç
 
 ## Como usar
 1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em seu navegador.
+2. Abra o arquivo `Home.html` em seu navegador.
 3. Utilize o menu para navegar entre as páginas e cadastrar ou visualizar necessidades.
