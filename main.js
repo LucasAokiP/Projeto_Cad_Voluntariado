@@ -139,6 +139,6 @@ function excluirAjuda(index) {
 }
 
 // Se estiver na página de histórico, carrega a tabela automaticamente ao abrir a página
-if (window.location.pathname.includes("historico_de_cadastro.html")) {
+if (window.location.pathname.includes("Historico_de_cadastro.html")) {
     window.onload = carregarTabela;
 }
