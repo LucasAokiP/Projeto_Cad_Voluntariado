@@ -22,17 +22,17 @@ async function pesquisarCep() {
     const cepInput = document.getElementById("cep");
     const cep = cepInput.value.replace(/\D/g, '');
 
-    if (!cepValido(cep)){
+    if (!cepValido(cep)) {
         alert("CEP inválido. Deve conter exatamente 8 dígitos numéricos.");
         return;
     }
 
     try {
         const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
-        const data = await response.json;
+        const data = await response.json();
 
-        if(data.erro) {
-            alert("CEP não encontrado");
+        if (data.erro) {
+            alert("CEP não encontrado.");
             return;
         }
 
@@ -40,15 +40,15 @@ async function pesquisarCep() {
         document.getElementById("bairro").value = data.bairro;
         document.getElementById("cidade").value = data.localidade;
         document.getElementById("estado").value = data.uf;
-    }
-    catch(error){
+
+    } catch (error) {
         console.error("Erro ao buscar o CEP:", error);
         alert("Erro ao buscar o CEP.");
     }
 }
 
 // Cadastra uma nova necessidade, valida os campos e salva no localStorage
-function cadastrar(){
+function cadastrar() {
     const nome = document.getElementById("nome").value;
     const tipo = document.getElementById("tipo").value;
     const titulo = document.getElementById("titulo").value;
