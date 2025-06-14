@@ -1,9 +1,9 @@
-/* Reset básico : remove margins e paddings padrões e define a fonte global */
+/* Reset básico: remove margens e paddings padrões e define fonte global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Define o body como flex container em coluna para sticky footer */
@@ -17,17 +17,17 @@ body {
 }
 
 /* Faz o conteúdo principal ocupar o espaço disponível */
-main, .main-content{
+main, .main-content {
     flex: 1;
 }
 
-/* Navegação superior*/
+/* Navegação superior */
 .navegacao {
     background-color: #2c3e50;
     padding: 15px 0;
 }
 
-/* Container dos links de navegação centralizando e espaçando*/
+/* Container dos links de navegação centralizados e espaçados */
 .nav {
     display: flex;
     justify-content: center;
@@ -117,6 +117,15 @@ main, .main-content{
     min-height: 80px;
 }
 
+/* Célula da descrição na tabela com rolagem e quebra de linha */
+td.descricao-box {
+    max-width: 200px;
+    max-height: 100px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 /* Estilo dos botões */
 button {
     margin-top: 20px;
@@ -160,15 +169,6 @@ button:hover {
     background-color: #fff;
     color: #333;
     border-bottom: 12px solid #f5f5f5;
-}
-
-/* Célula da descrição na tabela com rolagem e quebra de linha */
-td.descricao-box {
-    max-width: 200px;
-    max-height: 100px;
-    overflow: auto;
-    white-space: pre-wrap;
-    word-wrap: break-word;
 }
 
 /* Espaçamento interno das células da tabela */
