@@ -142,3 +142,4 @@ function excluirAjuda(index) {
 if (window.location.pathname.includes("Historico_de_cadastro.html")) {
     window.onload = carregarTabela;
 }
+// bem provavel vou perde nota pelo commit dps da entrega mas fiz uma correçao 
